@@ -1,5 +1,5 @@
 /*
- (c) 2012-2017 Domoticz.com, Robbert E. Peters
+ (c) 2012-2017 IBEYOND SMART SDN BHD, Robbert E. Peters
 */
 jQuery.fn.center = function (parent) {
 	if (parent) {
@@ -1371,8 +1371,8 @@ function ShowGeneralGraph(contentdiv, backfunction, id, name, switchtype, sensor
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: Get5MinuteHistoryDaysGraphTitle()
@@ -1497,8 +1497,8 @@ function ShowGeneralGraph(contentdiv, backfunction, id, name, switchtype, sensor
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: txtTopLabel + $.t('Last Month')
@@ -1649,8 +1649,8 @@ function ShowGeneralGraph(contentdiv, backfunction, id, name, switchtype, sensor
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: txtTopLabel + $.t('Last Year')
@@ -1953,7 +1953,7 @@ function AddDataToTempChart(data, chart, isday) {
 						}, false);
 						series = chart.get('setpointmin');
 						series.setData(datatablesm, false);
-			
+
 						chart.addSeries( {
 							id: 'setpointmax',
 							name: $.t('Set Point') + '_max',
@@ -2639,8 +2639,8 @@ function ShowCurrentLog(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: Get5MinuteHistoryDaysGraphTitle()
@@ -2718,8 +2718,8 @@ function ShowCurrentLog(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Last Month')
@@ -2798,8 +2798,8 @@ function ShowCurrentLog(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Last Year')
@@ -2897,8 +2897,8 @@ function ShowUVLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: 'UV ' + Get5MinuteHistoryDaysGraphTitle()
@@ -3002,8 +3002,8 @@ function ShowUVLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: 'UV ' + $.t('Last Month')
@@ -3122,8 +3122,8 @@ function ShowUVLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: 'UV ' + $.t('Last Year')
@@ -3288,8 +3288,8 @@ function ShowWindLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Wind') + ' ' + $.t('speed/gust') + ' ' + Get5MinuteHistoryDaysGraphTitle()
@@ -3520,8 +3520,8 @@ function ShowWindLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		xAxis: {
 			tickmarkPlacement: 'on',
@@ -3621,8 +3621,8 @@ function ShowWindLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Wind') + ' ' + $.t('speed/gust') + ' ' + $.t('Last Month')
@@ -3902,8 +3902,8 @@ function ShowWindLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Wind') + ' ' + $.t('speed/gust') + ' ' + $.t('Last Year')
@@ -4179,8 +4179,8 @@ function ShowMonthReportRain(actMonth, actYear) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: ''
@@ -4389,8 +4389,8 @@ function ShowYearReportRain(actYear) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: ''
@@ -4588,8 +4588,8 @@ function ShowRainLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Rainfall') + ' ' + Get5MinuteHistoryDaysGraphTitle()
@@ -4653,8 +4653,8 @@ function ShowRainLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Rainfall') + ' ' + $.t('Last Week')
@@ -4740,8 +4740,8 @@ function ShowRainLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Rainfall') + ' ' + $.t('Last Month')
@@ -4858,8 +4858,8 @@ function ShowRainLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Rainfall') + ' ' + $.t('Last Year')
@@ -4983,8 +4983,8 @@ function ShowBaroLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Barometer') + ' ' + Get5MinuteHistoryDaysGraphTitle()
@@ -5109,8 +5109,8 @@ function ShowBaroLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Barometer') + ' ' + $.t('Last Month')
@@ -5235,8 +5235,8 @@ function ShowBaroLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Barometer') + ' ' + $.t('Last Year')
@@ -5353,8 +5353,8 @@ function ShowAirQualityLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Air Quality') + ' ' + Get5MinuteHistoryDaysGraphTitle()
@@ -5540,8 +5540,8 @@ function ShowAirQualityLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Air Quality') + ' ' + $.t('Last Month')
@@ -5755,8 +5755,8 @@ function ShowAirQualityLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Air Quality') + ' ' + $.t('Last Year')
@@ -5949,8 +5949,8 @@ function ShowFanLog(contentdiv, backfunction, id, name, sensor) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('RPM') + ' ' + Get5MinuteHistoryDaysGraphTitle()
@@ -6054,8 +6054,8 @@ function ShowFanLog(contentdiv, backfunction, id, name, sensor) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('RPM') + ' ' + $.t('Last Month')
@@ -6168,8 +6168,8 @@ function ShowFanLog(contentdiv, backfunction, id, name, sensor) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('RPM') + ' ' + $.t('Last Year')
@@ -6297,8 +6297,8 @@ function ShowPercentageLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Percentage') + ' ' + Get5MinuteHistoryDaysGraphTitle()
@@ -6407,8 +6407,8 @@ function ShowPercentageLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Percentage') + ' ' + $.t('Last Month')
@@ -6542,8 +6542,8 @@ function ShowPercentageLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Percentage') + ' ' + $.t('Last Year')
@@ -7247,8 +7247,8 @@ function ShowSmartLog(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: Get5MinuteHistoryDaysGraphTitle()
@@ -7327,8 +7327,8 @@ function ShowSmartLog(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Last Week')
@@ -7391,8 +7391,8 @@ function ShowSmartLog(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Last Month')
@@ -7471,8 +7471,8 @@ function ShowSmartLog(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Last Year')
@@ -7590,8 +7590,8 @@ function ShowP1MonthReportGas(actMonth, actYear) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: ''
@@ -7881,8 +7881,8 @@ function ShowP1YearReportGas(actYear) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: ''
@@ -8069,8 +8069,8 @@ function ShowP1MonthReport(actMonth, actYear) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: ''
@@ -8427,8 +8427,8 @@ function ShowP1YearReport(actYear) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: ''
@@ -8732,8 +8732,8 @@ function ShowCounterLog(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: graph_title
@@ -8796,8 +8796,8 @@ function ShowCounterLog(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Last Week')
@@ -8862,8 +8862,8 @@ function ShowCounterLog(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Last Month')
@@ -8942,8 +8942,8 @@ function ShowCounterLog(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Last Year')
@@ -9107,8 +9107,8 @@ function ShowCounterLogSpline(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: graph_title
@@ -9204,8 +9204,8 @@ function ShowCounterLogSpline(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Last Week')
@@ -9266,8 +9266,8 @@ function ShowCounterLogSpline(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Last Month')
@@ -9346,8 +9346,8 @@ function ShowCounterLogSpline(contentdiv, backfunction, id, name, switchtype) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Last Year')
@@ -9445,8 +9445,8 @@ function ShowUsageLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Usage') + ' ' + Get5MinuteHistoryDaysGraphTitle()
@@ -9544,8 +9544,8 @@ function ShowUsageLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Usage') + ' ' + $.t('Last Month')
@@ -9657,8 +9657,8 @@ function ShowUsageLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Usage') + ' ' + $.t('Last Year')
@@ -9781,8 +9781,8 @@ function ShowLuxLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Lux') + ' ' + Get5MinuteHistoryDaysGraphTitle()
@@ -9886,8 +9886,8 @@ function ShowLuxLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Lux') + ' ' + $.t('Last Month')
@@ -10022,8 +10022,8 @@ function ShowLuxLog(contentdiv, backfunction, id, name) {
 		},
 		credits: {
 			enabled: true,
-			href: "http://www.domoticz.com",
-			text: "Domoticz.com"
+			href: "https://ibeyondsmart.com",
+			text: "IBEYOND SMART SDN BHD"
 		},
 		title: {
 			text: $.t('Lux') + ' ' + $.t('Last Year')
@@ -10137,7 +10137,7 @@ function getLEDType(SubType) {
 }
 
 function ShowRGBWPicker(selector, idx, Protected, MaxDimLevel, LevelInt, colorJSON, iSubType, iDimmerType, callback) {
-	
+
 	var color = {};
 	var devIdx = idx;
 	var SubType = iSubType;
@@ -10151,7 +10151,7 @@ function ShowRGBWPicker(selector, idx, Protected, MaxDimLevel, LevelInt, colorJS
 		// forget about it :)
 	}
 	var colorPickerMode = "color"; // Default
-	
+
 	// TODO: A little bit hackish, maybe extend the wheelColorPicker instead..
 	$(selector + ' #popup_picker')[0].getJSONColor = function() {
 		var colorJSON = ""; // Empty string, intentionally illegal JSON
@@ -10272,7 +10272,7 @@ function ShowRGBWPicker(selector, idx, Protected, MaxDimLevel, LevelInt, colorJS
 		$(selector + ' #popup_picker').wheelColorPicker('updateSliders');
 		$(selector + ' #popup_picker').wheelColorPicker('redrawSliders');
 	}
-	
+
 	/**enum ColorMode {
 		ColorModeNone = 0, // Illegal
 		ColorModeWhite,    // White. Valid fields: none
@@ -10342,10 +10342,10 @@ function ShowRGBWPicker(selector, idx, Protected, MaxDimLevel, LevelInt, colorJS
 			colorPickerMode = "customww";
 		}
 	}
-	
+
 	// Update color picker controls
 	UpdateColorPicker(colorPickerMode);
-	
+
 	$(selector + ' .pickermodergb').off().click(function(){
 		UpdateColorPicker(DimmerType!="rel"?"color":"color_no_master");
 	});

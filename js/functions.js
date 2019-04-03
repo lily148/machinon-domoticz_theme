@@ -3,7 +3,7 @@
 // main switchers and submenus logic function
 function applySwitchersAndSubmenus() {
     isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-	
+
 	//translate switchstates
 	switchState = {
 	on: $.t('On'),
@@ -11,7 +11,7 @@ function applySwitchersAndSubmenus() {
 	open: $.t('Open'),
 	closed: $.t('Closed')
 	};
-	
+
 	//switcher for lights and windows
 	$('#main-view .item').each(function () {
 		let bigText = $(this).find('#bigtext');
@@ -31,7 +31,7 @@ function applySwitchersAndSubmenus() {
         	} else {
         		$(this).css('opacity', '');
         	}
-        	}                   
+        	}
 		if (status.length == 0) {
 			status = bigText.attr('data-status');
 		} else {
@@ -68,7 +68,7 @@ function applySwitchersAndSubmenus() {
 							onImage.click();
 						}
 					}
-					
+
 				});
 			}
 		}
@@ -202,13 +202,13 @@ function enableThemeFeatures()
             }
         }
     });
-      
+
     console.log(themeName + " - feature files is loaded.");
     loadedThemeCSSandJS = true;
 }
 
 function loadThemeFeatureFiles(featureName) {
-   
+
     // get file list from theme settings object
     var files = theme.features[featureName].files;
     var arrayLength = files.length;
@@ -271,10 +271,10 @@ function locationHashChanged() {
 			childList: true,
 			subtree: true
 		});
-		
+
     } else {
 			console.log('Page change for: ' + location.hash);
-		
+
     }
      $("#mSettings").removeClass("current_page_item");
   }
@@ -295,36 +295,36 @@ function showTime(){
 	var day = date.getDate();
 	var mo = date.getMonth();
 	var y = date.getFullYear();
-	
+
 	mo = mo + 1;
 	mo = (mo < 10) ? "0" + mo : mo;
     day = (day < 10) ? "0" + day : day;
-	
+
 	textDate = y +"-"+ mo +"-" + day
 
     h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
-    
+
     var time = h + ":" + m + ":" + s;
     document.getElementById("MyClockDisplay").innerText = time;
     document.getElementById("MyClockDisplay").textContent = time;
 	document.getElementById("MyDateDisplay").innerText = textDate;
-    
+
     setTimeout(showTime, 1000);
-    
+
 }
 // Notifications
 function notify(key, type) { // type = 0 = only in notification log, 1 = only notification popup, 2 = in both
 if (theme.features.notification.enabled === true) {
-        if (type == 0 || type == 2){ 
+        if (type == 0 || type == 2){
             var existing = localStorage.getItem(themeFolder + ".notify");
             existing = existing ? JSON.parse(existing) : {};
             let d = new Date();
             dd = d.getTime();
             existing[key] = dd;
             localStorage.setItem(themeFolder + ".notify", JSON.stringify(existing));
-            
+
             $('#notyIcon').show();
         }
         if (type == 1 || type == 2){
@@ -355,7 +355,7 @@ function CheckDomoticzUpdate(showdialog) {
 		 dataType: 'json',
 		 success: function(data) {
 			if (data.HaveUpdate == true) {
-				msgtxt = 'Domoticz version #' + data.Revision + ' '+ language.is_available +'!';
+				msgtxt = 'Smart Gateway version #' + data.Revision + ' '+ language.is_available +'!';
 				msgtxt+=' <a onclick="CheckForUpdate(true);">' + language.update_now + '</a>';
 				notify(msgtxt, 0);
 			}
@@ -388,7 +388,7 @@ function triggerChange(idx, value, device) {
 		oldstates[idx] = value;
 }
 function getnotifications(idx, state) {
-	
+
 	var msg;
 	$.ajax({
 		url: 'json.htm?type=notifications&idx=' + idx + '',
@@ -447,7 +447,7 @@ function checkauth(){
 		if (permission == 2){
 			adminRights = true;
 		}else{
-			adminRights = false;	
+			adminRights = false;
 		}
 	}
 	});
