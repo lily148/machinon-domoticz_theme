@@ -1,23 +1,23 @@
 
 // Function to add theme tab
-function showThemeSettings() { 
-     
+function showThemeSettings() {
+
     if( !$('#tabsystem').length ){
         setTimeout(showThemeSettings, 1000);
         return;
     }
-    
+
     // Merge email tab into notification
     $('#emailsetup').prepend('<br/>');
     $('#emailsetup').appendTo('#notifications');
     $("#tabs li a[data-target='#tabemail']").parent().remove();
-	
+
     // Adding the settings tab.
 	if (!$('#tabtheme').length){
-		
+
 		// Modifying settings menu
 		$('<li id="themeTabButton"><a data-target="#tabtheme" data-toggle="tab" data-i18n="Theme">Theme</a></li>').appendTo('#tabs')
-		// If were on a mobile phone, make the theme tab link work.   
+		// If were on a mobile phone, make the theme tab link work.
 	    	$('#tabs li:not(.pull-right)').click(function() {
 			if ($(window).width() < 480) {
 			    $(this).siblings().show(); //safety, if user scaled/rotated the screen.
@@ -26,7 +26,7 @@ function showThemeSettings() {
 		$('#acceptnewhardwaretable > tbody > tr:nth-child(1) > td > button').click(function() {
 			notify(language.allow_new_hardware, 2);
 		});
-		$('#tabs > li.pull-right > a').click(function() {			
+		$('#tabs > li.pull-right > a').click(function() {
 			notify(language.domoticz_settings_saved, 2);
 		});
 		// Translate
@@ -52,7 +52,7 @@ function addHtmlTab(){
     html += '<b>Show "Last Seen" as Time Ago:</b>';
     html += '<p><i>Show last seen as time ago e.g "2 minutes ago", "about 4 hours ago".</i></p>';
     html += '<b>Custom Page (Iframe):</b>';
-    html += '<p><i>Custom Page with menu button. Add button name and custom page url. Add url e.g: <code>https://ibeyondsmart.com</code> or a local file e.g: <code>../templates/custompage.html</code></i></p>';
+    html += '<p><i>Custom Page with menu button. Add button name and custom page url. Add url e.g: <code>https://ibeyondsmart.com</code></i></p>';
     html += '<p><button class="resetbtn" id="themeResetButton" data-i18n="Reset theme">Reset Theme</button> <button class="resetbtn" id="saveSettingsButton" data-i18n="Save Theme Settings">Save Theme Settings</button></p>';
     html += '</div></div>';
     $('#tabtheme .row-fluid').append(html);
@@ -72,7 +72,7 @@ function loadSettingsHTML(){
 				bootbox.alert('<h3>Congratulations on the theme upgrade!</h3><p>Please reset the theme by clicking here:</p><p><a onClick="resetTheme(); return false;" href=""><button class="btn btn-info">Reset theme</button></a></p><p>(or find the theme reset button on the theme settings page)<p>');
 				if (isEmptyObject(theme) === false){
 					localStorage.setObject(themeFolder + ".themeSettings", theme);
-                }			
+                }
 			}
 		}
 		if( $(this).not(':checked') && $(this).is('.parentrequired')){
@@ -80,27 +80,27 @@ function loadSettingsHTML(){
 				if( $(this).is('.parentrequiredchild') ){
 				$(this).prop('disabled', true);
 				}
-			});			
+			});
 		}
 		if( $(this).is(':checked') && $(this).is('.parentrequired')) {
 				$(this).siblings().each(function() {
 					if( $(this).is('.parentrequiredchild') ){
 					$(this).prop('disabled', false);
 				}
-			});	
-			
+			});
+
 		}
 	});
-	
-	$('#tabtheme input[type="number"]').each(function(){    
+
+	$('#tabtheme input[type="number"]').each(function(){
         	var value = theme[this.name];
         	$(this).val(value);
 	});
-	$('#tabtheme input[type="text"]').each(function(){    
+	$('#tabtheme input[type="text"]').each(function(){
         	var value = theme[this.name];
         	$(this).val(value);
 	});
-	
+
 	// The theme immediately saves the changes.
 	$("#tabtheme input:checkbox").click(function() {
 		if ($(this).is(':checked')) {
@@ -119,7 +119,7 @@ function loadSettingsHTML(){
 						}
 					}
 				});
-			}			
+			}
 			theme.features[this.value].enabled = false;
 			unloadThemeFeatureFiles(this.value);
 		}
@@ -128,34 +128,34 @@ function loadSettingsHTML(){
 				if( $(this).is('.parentrequiredchild') ){
 				$(this).prop('disabled', true);
 				}
-			});			
+			});
 		}
 		if( $(this).is(':checked') && $(this).is('.parentrequired')) {
 				$(this).siblings().each(function() {
 					if( $(this).is('.parentrequiredchild') ){
 					$(this).prop('disabled', false);
 				}
-			});			
+			});
 		}
 		// Saves the new settings.
 		localStorage.setObject(themeFolder + ".themeSettings", theme);
 		console.log(theme.name + ' - theme settings saved');
 	});
 	$('#saveSettingsButton').click(function() {
-		$('#tabtheme input[type="number"]').each(function(){    
+		$('#tabtheme input[type="number"]').each(function(){
 			var value = $(this).val();
-			theme[this.name] = value; 
+			theme[this.name] = value;
 		});
-		$('#tabtheme input[type="text"]').each(function(){    
+		$('#tabtheme input[type="text"]').each(function(){
 			var value = $(this).val();
-			theme[this.name] = value; 
+			theme[this.name] = value;
 		});
 		localStorage.setObject(themeFolder + ".themeSettings", theme);
 		//console.log(themeName + ' - theme settings saved');
 		notify(language.theme_settings_saved, 2);
 		location.reload();
 	});
-	
+
 	// Resetbutton theme tab
 	$('#themeResetButton').click(function() {
 		notify(language.theme_restored, 2);
@@ -166,7 +166,7 @@ function loadSettingsHTML(){
 // Load theme settings
 function loadSettings() {
  if (typeof (Storage) !== "undefined") {
-	 if (localStorage.getItem(themeFolder + ".themeSettings") === null) { // If theme settings is missing in localstorage(browser) then load settings from local file e.g theme.json 
+	 if (localStorage.getItem(themeFolder + ".themeSettings") === null) { // If theme settings is missing in localstorage(browser) then load settings from local file e.g theme.json
 		$.ajax({url: 'acttheme/theme.json' , cache: false, async: false, dataType: 'json', success: function(localJson) {
 			theme = localJson;
 			themeName = theme.name;
@@ -188,7 +188,7 @@ function loadSettings() {
 function resetTheme(){
     if (typeof(Storage) !== "undefined") {
 		localStorage.removeItem(themeFolder + ".themeSettings");
-		location.reload();    
+		location.reload();
     }
 }
 
