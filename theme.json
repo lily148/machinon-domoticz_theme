@@ -1,15 +1,15 @@
 {
-    "type": "theme",    
+    "type": "theme",
     "name": "Machinon",
-    "description": "Machinon custom theme, simple and light",
+    "description": "Smart Gateway default theme, simple and light",
     "license": "GPL-2.0+",
     "version":"1.6.9",
     "author": "EdddieN",
-    "homepage": "https://www.machinon.com",
-    "wiki": "https://www.domoticz.com/wiki/Machinon_Theme",
+    "homepage": "https://ibeyondsmart.com",
+    "wiki": "https://ibeyondsmart.com",
     "standby_after": 10,
     "logo": "",
-    "custom_url": "https://www.domoticz.com",
+    "custom_url": "https://ibeyondsmart.com",
     "button_name": "Custom Page",
     "features": {
         "dark_theme": {
